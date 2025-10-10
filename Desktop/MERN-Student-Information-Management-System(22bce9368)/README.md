@@ -36,6 +36,7 @@ You can run the project locally using **Docker** for a fully containerized envir
 ```sh
 git clone <your-repo-link>
 cd MERN-Student-Information-Management-System
+```
 
 # Heroku Deployment Guide (MERN Stack with Docker)
 
