@@ -36,3 +36,17 @@ You can run the project locally using **Docker** for a fully containerized envir
 ```sh
 git clone <your-repo-link>
 cd MERN-Student-Information-Management-System
+
+Deployment to Heroku
+
+Ensure your Dockerfiles are included for both frontend and backend.
+
+Configure MongoDB Atlas connection in backend .env.
+
+Push your code to GitHub.
+
+Connect your repo to Heroku and enable container-based deployment.
+
+Heroku automatically builds your Docker images and runs the app.
+
+Your application will be available via the Heroku live URL, accessible anywhere.
