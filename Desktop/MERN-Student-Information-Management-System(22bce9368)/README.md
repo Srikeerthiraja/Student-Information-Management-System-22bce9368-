@@ -37,16 +37,35 @@ You can run the project locally using **Docker** for a fully containerized envir
 git clone <your-repo-link>
 cd MERN-Student-Information-Management-System
 
-Deployment to Heroku
+# Heroku Deployment Guide (MERN Stack with Docker)
 
-Ensure your Dockerfiles are included for both frontend and backend.
+##  Deployment Steps
 
-Configure MongoDB Atlas connection in backend .env.
+| Step | Description |
+| :--- | :--- |
+| **1. Container Files** | Ensure `Dockerfile`s (one for backend, one for frontend) are present in their respective directories. |
+| **2. Database Connection** | Configure `MONGODB_URI` or similar variable in the backend's `.env` file to connect to your **MongoDB Atlas** database. |
+| **3. Git Repository** | Push all current code, including all Docker files and the `docker-compose.yml`, to your **GitHub** repository. |
+| **4. Heroku Setup** | Connect the Heroku app to your GitHub repository and select the **Container Registry** deployment option. |
+| **5. Build & Run** | Heroku automatically executes the Docker build process based on your Dockerfiles and runs the resulting container images. |
+| **6. Access** | Your application becomes live and accessible via the assigned **Heroku URL**. |
 
-Push your code to GitHub.
+## Project Structure
 
-Connect your repo to Heroku and enable container-based deployment.
+```
+.
+├── backend/                  # Node.js + Express API
+│   ├── Dockerfile            # Backend Dockerfile
+│   └── ...                   # Server files
+├── frontend/                 # React.js frontend
+│   ├── Dockerfile            # Frontend Dockerfile
+│   └── ...                   # Client files
+├── docker-compose.yml        # Used for local multi-container orchestration
+└── .env                      # Environment variables (e.g., MONGODB_URI)
+```
 
-Heroku automatically builds your Docker images and runs the app.
+##  License
 
-Your application will be available via the Heroku live URL, accessible anywhere.
+```
+This project is licensed under the MIT License.
+```
