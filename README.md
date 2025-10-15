@@ -6,8 +6,6 @@
 <pre>Effortlessly manage student data and academic operations — from organizing classes and enrolling students or faculty, to tracking attendance, evaluating performance, and delivering feedback. Access academic records, view grades, and communicate with ease — all in one seamless platform.</pre>
 </h3>
 
-HEAD
-
 # About
 
 The Student Information Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline class organization and facilitate communication between students, teachers, and administrators.
