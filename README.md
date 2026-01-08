@@ -29,6 +29,8 @@ The Student Information Management System is a web-based application built using
 - Frontend: React.js, Material UI, Redux
 - Backend: Node.js, Express.js
 - Database: MongoDB
+- Containerization & Deployment: Docker, Docker Compose, Heroku
+- Authentication & Security: JWT-based role authentication
 
 <br>
 
@@ -59,29 +61,6 @@ npm start
 ```
 Now, navigate to `localhost:3000` in your browser. 
 The Backend API will be running at `localhost:5000`.
-
-# About
-
-The Student Information Management System is a web-based application built using the **MERN (MongoDB, Express.js, React.js, Node.js) stack**. It streamlines class organization, facilitates communication between students, teachers, and administrators, and ensures secure role-based access for all users.
-
-# Features
-
-- **User Roles:** Admin, Teacher, and Student, each with role-specific access and functionalities.
-- **Admin Dashboard:** Manage users, create classes and subjects, and configure system settings.
-- **Attendance Tracking:** Take attendance, mark students present/absent, and generate reports.
-- **Performance Assessment:** Teachers provide marks and feedback; students track progress.
-- **Data Visualization:** Interactive charts and tables for performance insights.
-- **Communication:** Messaging system between students and teachers for effective collaboration.
-
-# Technologies Used
-
-- **Frontend:** React.js, Material UI, Redux
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Containerization & Deployment:** Docker, Docker Compose, Heroku
-- **Authentication & Security:** JWT-based role authentication
-
-# Installation & Running Locally
 
 You can run the project locally using **Docker** for a fully containerized environment.
 
