@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-<pre>Effortlessly manage student data and academic operations — from organizing classes and enrolling students or faculty, to tracking attendance, evaluating performance, and delivering feedback. Access academic records, view grades, and communicate with ease — all in one seamless platform.</pre>
+<pre>A MERN-based Student Information Management System implementing role-based access (Admin, Teacher, Student) with JWT authentication. The system supports attendance tracking, performance evaluation, and secure REST APIs.</pre>
 </h3>
 
 # About
