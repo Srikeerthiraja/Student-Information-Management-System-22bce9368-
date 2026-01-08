@@ -39,7 +39,7 @@ The Student Information Management System is a web-based application built using
 - JWT tokens are used for authentication and role-based authorization
 - MongoDB stores users, classes, attendance, and performance data
 
-# Installation
+## Installation
 
 Open 2 terminals in separate windows/tabs.
 
