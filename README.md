@@ -16,7 +16,7 @@ The Student Information Management System is a web-based application built using
 
 - **Admin Dashboard:** Administrators can add new students and teachers, create classes and subjects, manage user accounts, and oversee system settings.
 
-- **Attendance Tracking:** Teachers can easily take attendance for their classes, mark students as present or absent, and generate attendance reports.
+- **Attendance Tracking:** Implemented attendance management using REST APIs with MongoDB schemas linked to classes and students.
 
 - **Performance Assessment:** Teachers can assess students' performance by providing marks and feedback. Students can view their marks and track their progress over time.
 
@@ -29,10 +29,15 @@ The Student Information Management System is a web-based application built using
 - Frontend: React.js, Material UI, Redux
 - Backend: Node.js, Express.js
 - Database: MongoDB
-- Containerization & Deployment: Docker, Docker Compose, Heroku
+- Containerization: Docker, Docker Compose (local development)
 - Authentication & Security: JWT-based role authentication
 
 <br>
+
+## Architecture Overview
+- React frontend communicates with Express REST APIs using the Fetch API
+- JWT tokens are used for authentication and role-based authorization
+- MongoDB stores users, classes, attendance, and performance data
 
 # Installation
 
@@ -71,19 +76,6 @@ git clone <your-repo-link>
 cd MERN-Student-Information-Management-System
 ```
 
-# Heroku Deployment Guide (MERN Stack with Docker)
-
-##  Deployment Steps
-
-| Step | Description |
-| :--- | :--- |
-| **1. Container Files** | Ensure `Dockerfile`s (one for backend, one for frontend) are present in their respective directories. |
-| **2. Database Connection** | Configure `MONGODB_URI` or similar variable in the backend's `.env` file to connect to your **MongoDB Atlas** database. |
-| **3. Git Repository** | Push all current code, including all Docker files and the `docker-compose.yml`, to your **GitHub** repository. |
-| **4. Heroku Setup** | Connect the Heroku app to your GitHub repository and select the **Container Registry** deployment option. |
-| **5. Build & Run** | Heroku automatically executes the Docker build process based on your Dockerfiles and runs the resulting container images. |
-| **6. Access** | Your application becomes live and accessible via the assigned **Heroku URL**. |
-
 ## Project Structure
 
 ```
@@ -98,9 +90,4 @@ cd MERN-Student-Information-Management-System
 └── .env                      # Environment variables (e.g., MONGODB_URI)
 ```
 
-##  License
-
-```
-This project is licensed under the MIT License.
-```
 
