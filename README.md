@@ -93,17 +93,31 @@ cd MERN-Student-Information-Management-System
 ## Screenshots
 
 ### User Role
+![User-role](screenshots/User-role.png)
 
+### Home-page
+![Home-page](screenshots/Home-page.png)
 
 ### Login API (JWT Token Generated)
-(screenshots/Login-jwt.png)
+![Login API](screenshots/Login-jwt.png)
 
 ### Protected Route Access
-![Protected API](screenshots/protected-api.png)
-
-### Database (MongoDB)
-![MongoDB](screenshots/db-mongo.png)
+![Protected API](screenshots/Protected-api.png)
 
 ### Application Dashboard
-![Dashboard](screenshots/dashboard-ui.png)
+![Dashboard](screenshots/Dashboard.png)
+
+### Student-Addition
+![Student-Addition](screenshots/Add-students.png)
+
+### Attendance feature
+![Attendance feature](screenshots/Attendance-feature.png)
+
+### Login-page
+![Login-page](screenshots/Login-page.png)
+
+### Database (MongoDB)
+![MongoDB](screenshots/Mongo-db.png)
+
+
 
