@@ -90,4 +90,17 @@ cd MERN-Student-Information-Management-System
 └── .env                      # Environment variables (e.g., MONGODB_URI)
 ```
 
+## Screenshots
+
+### Login API (JWT Token Generated)
+![Login API](screenshots/token-response.png)
+
+### Protected Route Access
+![Protected API](screenshots/protected-api.png)
+
+### Database (MongoDB)
+![MongoDB](screenshots/db-mongo.png)
+
+### Application Dashboard
+![Dashboard](screenshots/dashboard-ui.png)
 
