@@ -92,8 +92,11 @@ cd MERN-Student-Information-Management-System
 
 ## Screenshots
 
+### User Role
+
+
 ### Login API (JWT Token Generated)
-![Login API](screenshots/token-response.png)
+![Login API](Screenshots/Login-jwt.png)
 
 ### Protected Route Access
 ![Protected API](screenshots/protected-api.png)
