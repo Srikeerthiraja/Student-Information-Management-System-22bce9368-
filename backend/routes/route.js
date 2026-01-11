@@ -1,3 +1,4 @@
+const { authMiddleware } = require('../middleware/auth.js');
 const router = require('express').Router();
 const { adminRegister, adminLogIn, getAdminDetail } = require('../controllers/admin-controller.js');
 const { sclassCreate, sclassList, deleteSclass, deleteSclasses, getSclassDetail, getSclassStudents } = require('../controllers/class-controller.js');
@@ -30,11 +31,11 @@ router.post('/AdminReg', adminRegister);
 router.post('/AdminLogin', adminLogIn);
 router.post('/StudentLogin', studentLogIn);
 router.post('/TeacherLogin', teacherLogIn);
-router.get("/Admin/:id", getAdminDetail); 
+router.get("/Admin/:id", authMiddleware, getAdminDetail); 
 
 router.post('/StudentReg', studentRegister);
-router.get("/Students/:id", getStudents);
-router.get("/Student/:id", getStudentDetail);
+router.get("/Students/:id", authMiddleware, getStudents);
+router.get("/Student/:id", authMiddleware, getStudentDetail);
 router.delete("/Students/:id", deleteStudents);
 router.delete("/StudentsClass/:id", deleteStudentsByClass);
 router.delete("/Student/:id", deleteStudent);
@@ -50,7 +51,7 @@ router.put('/RemoveStudentAtten/:id', removeStudentAttendance);
 // TEACHER ROUTES
 // ========================
 router.post('/TeacherReg', teacherRegister);
-router.get("/Teachers/:id", getTeachers);
+router.get("/Teachers/:id",authMiddleware, getTeachers);
 router.get("/Teacher/:id", getTeacherDetail);
 router.delete("/Teachers/:id", deleteTeachers);
 router.delete("/TeachersClass/:id", deleteTeachersByClass);
