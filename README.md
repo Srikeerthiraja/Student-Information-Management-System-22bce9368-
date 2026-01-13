@@ -6,12 +6,27 @@
 <pre>A MERN-based Student Information Management System implementing role-based access (Admin, Teacher, Student) with JWT authentication. The system supports attendance tracking, performance evaluation, and secure REST APIs.</pre>
 </h3>
 
-# About
+## Problem Statement
+Educational institutions often manage attendance, academic performance, and student communication using
+manual processes or multiple disconnected tools. This results in data inconsistency, limited transparency,
+and security risks around sensitive student information.
 
-The Student Information Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline class organization and facilitate communication between students, teachers, and administrators.
+There is a need for a centralized, secure system that allows administrators, teachers, and students to
+interact with academic data based on clearly defined roles and permissions.
+
+## Solution Overview
+
+This project implements a web-based Student Information Management System using the MERN stack
+(MongoDB, Express.js, React.js, Node.js).
+
+The system provides role-based access for Admin, Teacher, and Student users, enabling secure management
+of attendance, performance evaluation, and communication through RESTful APIs. JWT-based authentication
+ensures that users can only access functionality permitted by their role.
+
 
 ## Features
-
+The system is designed to digitize core academic workflows while maintaining security, scalability,
+and clear separation of responsibilities between users.
 - **User Roles:** The system supports three user roles: Admin, Teacher, and Student. Each role has specific functionalities and access levels.
 
 - **Admin Dashboard:** Administrators can add new students and teachers, create classes and subjects, manage user accounts, and oversee system settings.
@@ -38,6 +53,26 @@ The Student Information Management System is a web-based application built using
 - React frontend communicates with Express REST APIs using the Fetch API
 - JWT tokens are used for authentication and role-based authorization
 - MongoDB stores users, classes, attendance, and performance data
+
+## Design Decisions & Trade-offs
+
+### JWT Authentication vs Session-based Authentication
+JWT was chosen to keep the backend stateless and scalable, especially for a REST API-driven architecture.
+The trade-off is that token revocation is less straightforward and requires careful expiration handling.
+
+### MongoDB vs Relational Database
+MongoDB was selected for its flexible schema design, which simplifies modeling evolving entities such as
+attendance records and performance data. This comes at the cost of weaker enforced relationships compared
+to a relational database.
+
+### MERN Stack vs Monolithic Framework
+Using a separate React frontend and Express backend improves modularity and mirrors real-world production
+systems, but increases initial setup complexity and API management overhead.
+
+### Dockerized Development Environment
+Docker and Docker Compose were used to ensure consistent local environments and easier onboarding.
+This adds some learning curve and slightly slower startup times compared to a non-containerized setup.
+
 
 ## Installation
 
@@ -89,6 +124,13 @@ cd MERN-Student-Information-Management-System
 ├── docker-compose.yml        # Used for local multi-container orchestration
 └── .env                      # Environment variables (e.g., MONGODB_URI)
 ```
+
+## Future Improvements
+- Implement refresh tokens and role-based permission policies at a finer granularity
+- Add analytics dashboards for administrators
+- Introduce automated testing for APIs
+- Deploy the system on a cloud platform with CI/CD
+
 
 ## Screenshots
 
