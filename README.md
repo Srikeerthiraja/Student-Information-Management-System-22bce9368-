@@ -126,9 +126,7 @@ cd MERN-Student-Information-Management-System
 ```
 
 ## Future Improvements
-- Implement refresh tokens and role-based permission policies at a finer granularity
 - Add analytics dashboards for administrators
-- Introduce automated testing for APIs
 - Deploy the system on a cloud platform with CI/CD
 
 
