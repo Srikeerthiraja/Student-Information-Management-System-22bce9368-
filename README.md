@@ -121,7 +121,8 @@ cd MERN-Student-Information-Management-System
 ├── frontend/                 # React.js frontend
 │   ├── Dockerfile            # Frontend Dockerfile
 │   └── ...                   # Client files
-├── docker-compose.yml        # Used for local multi-container orchestration
+├── docker-compose.prod.yml
+├── docker-compose.dev.yml         
 └── .env                      # Environment variables (e.g., MONGODB_URI)
 ```
 
